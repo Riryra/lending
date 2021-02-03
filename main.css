@@ -332,11 +332,11 @@ ul, ol {
 .timeline__row:nth-child(odd)::before{
     content: '';
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
     background-color: #FEC404;
     border-radius: 50%;
-    right: -75px;
+    right: -85px;
     top: 50%;
     transform: translate(0%, -50%);
     border: 6px solid #E9ECEF;
@@ -345,18 +345,18 @@ ul, ol {
 .timeline__row:nth-child(even)::before{
     content: '';
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
     background-color: #FEC404;
     border-radius: 50%;
-    left: -75px;
+    left: -85px;
     top: 50%;
     transform: translate(0%, -50%);
     border: 6px solid #E9ECEF;
 }
 
 .timeline__content{
-    padding: 80px;
+    padding: 80px 80px 20px 80px;
     margin: 25px;
 }
 
@@ -690,7 +690,6 @@ ul, ol {
     .contact__inputs{
         width: 100%;
     }
-
 /* Footer (max-width: 750px) *
 **************************************************/
     .footer__row-item{
@@ -699,7 +698,6 @@ ul, ol {
     .policy{
         padding-bottom: 15px;
     }
-
 @media (max-width: 650px) {
 /* Portfolio__media (max-width: 650px) *
 *******************************/
@@ -707,7 +705,6 @@ ul, ol {
         width: 100%;
         max-width: 400px;
     }
-
 /* About__media (max-width: 650px) *
 *******************************/
     #about{
@@ -763,6 +760,5 @@ ul, ol {
 
         .contact__form {
             max-width: 250px;
-
         }
     }
