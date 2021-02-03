@@ -297,11 +297,11 @@ ul, ol {
 .about__timeline::before{
     content: '';
     position: absolute;
-    height: 90%;
+    height: 85%;
     width: 2px;
     background-color: #E9ECEF;
     left: 50%;
-    top:20%;
+    top: 10%;
 }
 
 .timeline__row:nth-child(odd){
@@ -428,7 +428,7 @@ ul, ol {
 .contact__form{
     display: flex;
     flex-wrap: wrap;
-    margin: 5px 35px;
+    margin: 5px auto;
 }
 
 .contact__inputs{
@@ -500,6 +500,12 @@ ul, ol {
 
 /* Media *
 **************************************************/
+@media (max-width: 1175px) {
+/* Section__Contact (max-width: 1175px) *
+**************************************************/
+    .contact__form{
+        max-width: 850px;
+    }
 
 @media (max-width: 1025px) {
 /* Header__media (max-width: 1025px)*
@@ -538,8 +544,6 @@ ul, ol {
         max-width: 370px;
     }
 
-}
-
 /* About__media (max-width: 1025px)*
 *******************************/
     .about__timeline {
@@ -569,6 +573,18 @@ ul, ol {
         padding: 15px 50px;
         margin: 15px 25px;
     }
+/* Section__Contact (max-width: 1025px) *
+**************************************************/
+    .contact__form{
+        max-width: 850px;
+    }
+
+@media (max-width: 850px) {
+ /* Section__Contact (max-width: 850px) *
+ *************************************************/
+     .contact__form{
+        max-width: 700px;
+     }
 
 @media (max-width: 750px) {
     .main{
@@ -662,18 +678,21 @@ ul, ol {
         left: -80px;
     }
 
-/* Section__Contact *
+/* Section__Contact (max-width: 750px) *
 **************************************************/
     #contact{
         padding-top: 14px;
         padding-bottom:25px;
         margin-top: 56px;
     }
+    .contact__form{
+        max-width: 600px;
+    }
     .contact__inputs{
-     width: 100%;
+        width: 100%;
     }
 
-/* Footer *
+/* Footer (max-width: 750px) *
 **************************************************/
     .footer__row-item{
         width: 100%;
@@ -709,13 +728,42 @@ ul, ol {
     .timeline__row{
         margin-bottom: 10px;
     }
-}
+
+@media (max-width: 600px) {
+/* Section__Contact (max-width: 600px) *
+**************************************************/
+    #contact{
+        padding-top: 14px;
+        padding-bottom:25px;
+        margin-top: 56px;
+    }
+    .contact__form{
+        max-width: 450px;
+    }
 
 @media (max-width: 450px){
     .timeline__content__body{
         font-size: 12px;
     }
 
-}
+    @media (max-width: 350px) {
+        .btn {
+            padding: 15px 18px;
+            font-size: 12px;
+        }
 
-/*finish*/
+        .services__icons {
+            height: 130px;
+        }
+
+        .info {
+            line-height: 24px;
+            font-size: 14px;
+            padding: 8px 10px;
+        }
+
+        .contact__form {
+            max-width: 250px;
+
+        }
+    }
